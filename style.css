@@ -3,7 +3,6 @@ table {
   height: 300px;
 }
 
-td {
-  cursor: pointer;
-  font-size: 2rem;
+p{
+	font-size:30px;
 }
