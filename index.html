@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Velha</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center">Jogo da Velha</h1>
+        <div id="winner" class="alert alert-success text-center d-none">
+          O jogador <span id="winnerPlayer"></span> ganhou!
+          <button class="btn btn-primary btn-sm ml-2" onclick="resetGame()">Reiniciar</button>
+        </div>
+        <table class="table table-bordered">
+          <tr>
+            <td onclick="handleClick(0, 0)" class="text-center align-middle"></td>
+            <td onclick="handleClick(0, 1)" class="text-center align-middle"></td>
+            <td onclick="handleClick(0, 2)" class="text-center align-middle"></td>
+          </tr>
+          <tr>
+            <td onclick="handleClick(1, 0)" class="text-center align-middle"></td>
+            <td onclick="handleClick(1, 1)" class="text-center align-middle"></td>
+            <td onclick="handleClick(1, 2)" class="text-center align-middle"></td>
+          </tr>
+          <tr>
+            <td onclick="handleClick(2, 0)" class="text-center align-middle"></td>
+            <td onclick="handleClick(2, 1)" class="text-center align-middle"></td>
+            <td onclick="handleClick(2, 2)" class="text-center align-middle"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

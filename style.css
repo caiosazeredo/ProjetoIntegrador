@@ -1,0 +1,9 @@
+table {
+  width: 300px;
+  height: 300px;
+}
+
+td {
+  cursor: pointer;
+  font-size: 2rem;
+}
